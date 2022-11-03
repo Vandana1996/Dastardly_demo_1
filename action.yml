@@ -1,6 +1,9 @@
 name: 'Dastardly Scan Action'
 description: 'Runs a Dastardly scan against a target site'
 author: 'PortSwigger'
+jobs:
+  check-bats-version:
+    runs-on: vmkali-01
 uses: PortSwigger/dastardly-github-action@main
     with:
       target-url: 'https://ginandjuice.shop'
